@@ -1,0 +1,33 @@
+/* Container do Filtro de Ordenação */
+.sort-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 300px;
+}
+
+.sort-filter label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.sort-filter select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sort-filter select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.sort-filter select:hover {
+    border-color: #0056b3;
+}

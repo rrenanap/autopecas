@@ -1,0 +1,88 @@
+/* Sobreposição do Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 50px;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    width: 30rem;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.payment-button:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.payment-button.selected {
+    background: #007bff;
+    color: #fff;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.close-button,
+.confirm-button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 48%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close-button {
+    background: #f44336;
+    color: #fff;
+}
+
+.confirm-button {
+    background: #4caf50;
+    color: #fff;
+}
